@@ -1,13 +1,83 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
+h1{
+  color: #333333;
+}
+.app{
+  width: 608px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+.categories{
+  display: flex;
+  border-bottom: 1px solid #BDBDBD;
+  justify-content: space-around;
+  color: #333333;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.categories > div{
+  width: 89px;
+  cursor: pointer;
+}
+.border-bottom{
+  height: 4px;
+  background: #2F80ED;
+  border-radius: 4px 4px 0px 0px;
+}
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.input-container input{
+  border: 1px solid #BDBDBD;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  color: #828282;
+  font-weight: 400;
+  flex: 2;
+  margin-right: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+.input-container button{
+  background: #2F80ED;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.todo input{
+  margin-right: 7px;
+}
+.todo{
+  align-items: center;
+  height: 35px;
+}
+.todo p{
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+}
+.completed{
+text-decoration-line: line-through;
+  color: #333333;
+}
+#tag{
+  color: #A9A9A9;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
